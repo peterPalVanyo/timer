@@ -1,0 +1,64 @@
+svg circle {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 20px;
+  /* stroke-dasharray: 550;
+    stroke-dashoffset: 0; */
+}
+svg {
+  transform: rotate(-90deg);
+  width: 400px;
+  height: 400px;
+  position: relative;
+  z-index: -1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* inline circle rotate: transform="rotate(-90 100 100)" */
+body {
+  padding: 0 auto;
+}
+.container {
+  margin: 3rem auto;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.timer {
+  position: relative;
+  display: inline-block;
+}
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.timer .controls input {
+  display: block;
+  border: none;
+  width: 240px;
+  font-size: 90px;
+  text-align: center;
+}
+.timer button {
+  border: none;
+  font-size: 36px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.timer button:focus {
+  outline: none;
+}
+
+.timer input:focus {
+  outline: none;
+}
